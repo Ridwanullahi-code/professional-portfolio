@@ -1,4 +1,3 @@
-
 # **Simple Homepage** 
 ## Simple homepage that cointain only one `html's` header tag and style with `css` to make it looks well.
 
