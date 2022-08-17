@@ -1,0 +1,20 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+/* Set the  size for the home page */
+body{
+    max-width: auto;
+    height: 100vh;
+    background-color: white;
+}
+
+/* Style the header text  */
+h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top:20%;
+    
+}
