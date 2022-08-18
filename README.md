@@ -11,14 +11,12 @@
 To make use of this project run below on any command prompt to have it on your local system.
 
 ```
-  git clone https://github.com/Ridwanullahi-code/github-flow.git
+  git clone https://github.com/Ridwanullahi-code/professional-portifolio
 ```
 or
 ```
-git clone git@github.com:Ridwanullahi-code/github-flow.git
+git clone git@github.com:Ridwanullahi-code/professional-portifolio.git
 ```
-
-
 ## **Show your support**
 
 Give a ⭐️ if you like this project!
