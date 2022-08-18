@@ -1,6 +1,5 @@
-# **Simple Homepage** 
-## Simple homepage that cointain only one `html's` header tag and style with `css` to make it looks well.
-
+# **Professional Portfolio** 
+## Professional portfolio that is a collection of examples and evidence to showcase your experience, capability and potential for employment opportunities and professional development.
 
 ## **Build with:**
 
@@ -9,7 +8,7 @@
 * VS Code (IDE)
 
 ## **Usage**
-To make use of this project run below below on any command prompt to have it on your local system.
+To make use of this project run below on any command prompt to have it on your local system.
 
 ```
   git clone https://github.com/Ridwanullahi-code/github-flow.git
