@@ -1,19 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* global setting for body contents */
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Set the  size for the home page */
 body {
-  max-width: auto;
-  height: 100vh;
-  background-color: white;
+  background-color: #e5e5e5;
 }
 
-/* Style the header text  */
-h1 {
-  font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 20%;
+main {
+  background-color: rgba(255, 255, 255, 0.596);
+  max-width: 375px;
+  height: 800px;
+  margin: auto;
+}
+
+.header_container {
+  background-color: white;
+  max-width: 375px;
+  height: 718px;
+}
+
+/* set position */
+header {
+  position: sticky;
+  top: 0;
+}
+
+/* style all the icon on mobile phones */
+header .mobile_icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* position name and menu bar */
+.static_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* style time */
+.mobile_icon p {
+  margin: 16px 0 0 21px;
+  font-weight: lighter;
+}
+
+.mobile_icon img {
+  margin: 20px 20px 0 0;
+}
+
+/* styling for logo name  */
+header .name {
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 30px 0 0 24px;
+}
+
+header svg {
+  margin: 30px 36px 0 0;
 }
