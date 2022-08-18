@@ -9,21 +9,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background-color: #e5e5e5;
-}
-
-main {
-  background-color: rgba(255, 255, 255, 0.596);
-  max-width: 375px;
-  height: 800px;
-  margin: auto;
-}
-
 .header_container {
   background-color: white;
   max-width: 375px;
   height: 718px;
+  margin: auto;
 }
 
 /* set position */
@@ -32,13 +22,6 @@ header {
   top: 0;
 }
 
-/* style all the icon on mobile phones */
-header .mobile_icon {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* position name and menu bar */
 .static_bar {
   display: flex;
   justify-content: space-between;
@@ -50,8 +33,74 @@ header .mobile_icon {
   font-weight: lighter;
 }
 
+header svg {
+  margin: 30px 36px 0 0;
+}
+
+.headline {
+  background-image: url("images/Header_bg.svg");
+  position: absolute;
+  top: 16%;
+}
+
+/* Position summary about me section */
+.intro {
+  margin: 150px 24px 0;
+}
+
+/* Styling for welcome part */
+.intro h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #091e42;
+  margin-bottom: 12px;
+  line-height: 52px;
+}
+
+/* Styling for introduction section */
+.intro p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400px;
+  font-style: normal;
+  color: #344563;
+  width: 327px;
+  height: 146px;
+}
+
+body {
+  background-color: #e5e5e5;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+/* Set the  size for the home page */
+main {
+  height: 718px;
+  max-width: 375px;
+  background-color: white;
+  border-radius: 0 0 0 13%;
+  margin: auto;
+}
+
+.mobile_icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile_icon time {
+  margin: 16px 0 0 21px;
+  font-weight: lighter;
+}
+
 .mobile_icon img {
   margin: 20px 20px 0 0;
+}
+
+header .static_bar {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* styling for logo name  */
@@ -62,6 +111,20 @@ header .name {
   margin: 30px 0 0 24px;
 }
 
-header svg {
+header .menu {
   margin: 30px 36px 0 0;
+}
+
+/* Set position of social medials section */
+.social_media {
+  color: #7f8cff;
+  font-size: 15px;
+  line-height: 40px;
+  margin: 20px 24px 0;
+}
+
+/* Style the social medials icon */
+.social_media div {
+  display: flex;
+  gap: 20px;
 }
