@@ -10,16 +10,21 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
 }
 
 /* Design and set the main page to center */
 main {
-  background-color: white;
-  max-width: 375px;
-  height: 718px;
   margin: auto;
-  border-radius: 0 0 0 10%;
+  background-color: #F7F7F9;
+  width:375px;
+}
+
+.header-container{
+  height: 718px;
+  background-color: white;
+  border: 1px solid #DFE1E6;
+  border-radius: 0 0 0 13%;
 }
 
 /* position navigation container */
@@ -84,48 +89,61 @@ nav .menu-button {
   margin-top: 10px;
 }
 
-.work-section {
-  height: 552px;
-  margin: auto;
+.work-section{
+  position: relative;
+  top: 90%;
 }
 
 /* style work section part */
 .projects {
-  margin-top: 114px;
+  margin: 114px auto;
+  background-color: white;
+  height: 590px;
+  width: 327px;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
 }
 
 .project-image{
-  width: 351px;
   height: 220px;
-  margin:12px auto;
+  margin:12px 12px;
 }
 
-.project-one{
+.projects-describe{
   margin-left:12px;
 }
-
-.project-one h1{
+.project-title{
   font-size: 32px;
   color:#172B4D;
   line-height: 44px;
-  font-weight: 700px;	
+  font-weight: 700px;
 
 }
-.project-one-describe ul{
+.projects-describe .frame{
   display: flex;
-  gap: 20px;
+  gap: 32px;
+  margin-top:16px;
+
 }
-.tools {
-  margin-left: 12px;
-  margin-top:4px;
+.projects-describe .one,.two{
+  list-style-type: circle;
+  color: #C1C7D0;
+
 }
+
 .description{
+  margin-top:16px;
   line-height: 24px;
   font-weight: 400px;
   font-size: 15px;
   width: 295px;
   height: 76px;
   color: #344563;
+}
+.tools {
+  display: flex;
+  gap:12px;
+  margin-top:24px;
 }
 .tools li{
   height: 24px;
@@ -136,4 +154,21 @@ nav .menu-button {
   padding: 4px 12px;
   font-weight: 500px;
   color: #6070FF;
+}
+
+.projects .button{
+  padding: 12px 20px;
+  width: 100px;
+  height: 24px;
+  font-weight: 500px;
+  size: 17px;
+  line-height: 48px;
+  color:#396DF2;
+  text-align: center;
+  border: 1px solid #396DF2;
+  border-radius: 8px;
+  position: relative;
+  top: 25px;
+
+
 }
