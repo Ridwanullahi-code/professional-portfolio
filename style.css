@@ -19,25 +19,7 @@ main {
   max-width: 375px;
   height: 718px;
   margin: auto;
-}
-
-/* set position */
-header {
-  position: sticky;
-  top: 0;
-}
-
-/* position mobile icons */
-.mobile-icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* style mobile icons */
-.mobile-icons p,
-.time {
-  margin: 16px 0 0 21px;
-  font-weight: lighter;
+  border-radius: 0 0 0 10%;
 }
 
 /* position navigation container */
@@ -51,15 +33,15 @@ nav .logo {
   color: #6070ff;
   font-size: 18px;
   font-weight: bolder;
-  margin: 30px 0 0 24px;
+  margin: 24px 0 0 24px;
 }
 
 nav .menu-button {
-  margin: 30px 36px 0 0;
+  margin: 24px 36px 0 0;
 }
 
 .headline {
-  background-image: url("images/Header_bg.svg");
+  background-image: url("images/shape2.svg");
   position: absolute;
   top: 16%;
 }
