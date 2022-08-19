@@ -83,3 +83,57 @@ nav .menu-button {
   gap: 20px;
   margin-top: 10px;
 }
+
+.work-section {
+  height: 552px;
+  margin: auto;
+}
+
+/* style work section part */
+.projects {
+  margin-top: 114px;
+}
+
+.project-image{
+  width: 351px;
+  height: 220px;
+  margin:12px auto;
+}
+
+.project-one{
+  margin-left:12px;
+}
+
+.project-one h1{
+  font-size: 32px;
+  color:#172B4D;
+  line-height: 44px;
+  font-weight: 700px;	
+
+}
+.project-one-describe ul{
+  display: flex;
+  gap: 20px;
+}
+.tools {
+  margin-left: 12px;
+  margin-top:4px;
+}
+.description{
+  line-height: 24px;
+  font-weight: 400px;
+  font-size: 15px;
+  width: 295px;
+  height: 76px;
+  color: #344563;
+}
+.tools li{
+  height: 24px;
+  font-size: 12px;
+  background: #EBEBFF;
+  border-radius: 8px;
+  text-align: center;
+  padding: 4px 12px;
+  font-weight: 500px;
+  color: #6070FF;
+}
