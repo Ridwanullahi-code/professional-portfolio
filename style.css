@@ -9,7 +9,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.header_container {
+body {
+  background-color: #f5f5f5;
+}
+
+/* Design and set the main page to center */
+main {
   background-color: white;
   max-width: 375px;
   height: 718px;
@@ -22,18 +27,34 @@ header {
   top: 0;
 }
 
-.static_bar {
+/* position mobile icons */
+.mobile-icons {
   display: flex;
   justify-content: space-between;
 }
 
-/* style time */
-.mobile_icon p {
+/* style mobile icons */
+.mobile-icons p,
+.time {
   margin: 16px 0 0 21px;
   font-weight: lighter;
 }
 
-header svg {
+/* position navigation container */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* styling for logo name  */
+nav .logo {
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 30px 0 0 24px;
+}
+
+nav .menu-button {
   margin: 30px 36px 0 0;
 }
 
@@ -68,63 +89,15 @@ header svg {
   height: 146px;
 }
 
-body {
-  background-color: #e5e5e5;
-  width: 100%;
-  position: relative;
-  height: 100%;
-}
-
-/* Set the  size for the home page */
-main {
-  height: 718px;
-  max-width: 375px;
-  background-color: white;
-  border-radius: 0 0 0 13%;
-  margin: auto;
-}
-
-.mobile_icon {
-  display: flex;
-  justify-content: space-between;
-}
-
-.mobile_icon time {
-  margin: 16px 0 0 21px;
-  font-weight: lighter;
-}
-
-.mobile_icon img {
-  margin: 20px 20px 0 0;
-}
-
-header .static_bar {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* styling for logo name  */
-header .name {
-  color: #6070ff;
-  font-size: 18px;
-  font-weight: bolder;
-  margin: 30px 0 0 24px;
-}
-
-header .menu {
-  margin: 30px 36px 0 0;
-}
-
-/* Set position of social medials section */
-.social_media {
+/* Set position of social medial icons */
+.social-medials {
   color: #7f8cff;
   font-size: 15px;
-  line-height: 40px;
-  margin: 20px 24px 0;
+  margin-left: 24px;
 }
 
-/* Style the social medials icon */
-.social_media div {
+.social-icons {
   display: flex;
   gap: 20px;
+  margin-top: 10px;
 }
