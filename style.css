@@ -93,15 +93,19 @@ nav .menu-button {
 /* position work section */
 .work-section {
   position: relative;
-  top: 90%;
+  top: 95%;
+  display: grid;
+  justify-content: center;
 }
 
 /* style work section part */
 .projects {
-  margin: 114px auto;
+  display: flexbox;
+  flex-direction: column;
   background-color: white;
   height: 585px;
   width: 327px;
+  margin: 40px 0;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
@@ -164,8 +168,7 @@ nav .menu-button {
 }
 
 /* style all the clickable buttons */
-.projects .button,
-.resume-button {
+.button {
   padding: 12px 20px;
   width: 100px;
   height: 24px;
@@ -180,6 +183,22 @@ nav .menu-button {
   top: 25px;
 }
 
+.btn {
+  margin-left: 24px;
+}
+
+.button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: white;
+}
+
+.button:active {
+  background: #2230d2;
+  border-radius: 8px;
+}
+
 /* resize project 3 and 4 size */
 .project2,
 .project4 {
@@ -189,27 +208,29 @@ nav .menu-button {
 /* postion about me section */
 .about {
   width: 375px;
-  height: 1100px;
+  height: 1180px;
+  display: flex;
+  flex-direction: column;
   background: white;
   border: 1px solid white;
   border-radius: 0 80px 0 0;
 }
 
-/* repositon resume button */
-.resume-button {
-  margin-left: 24px;
+#skills {
+  position: relative;
+  top: 80px;
+  margin-left: 30px;
 }
 
-/* postion technologies used */
-.technologies {
-  margin: 80px 0 0 26px;
+.languages {
+  margin: 32px 30px;
 }
 
 /* style technologies used */
-.technologies div {
+.skill {
   display: flex;
-  margin-top: 20px;
   width: 303px;
+  margin: 32px  0;
   color: #253858;
   font-weight: 500px;
   height: 67px;
@@ -220,45 +241,26 @@ nav .menu-button {
   gap: 16px;
 }
 
-/* position all technology images */
-.technologies img {
+.skill img {
   margin-left: 12px;
 }
 
-/* style technology names */
-.technologies h2 {
-  font-size: 20px;
+.resume-button {
+  margin-left: 30px;
+}
+
+#skills .h2 {
+  font-size: 28px;
   font-weight: 500px;
 }
 
-/* postion area of expertise */
-.skills {
-  margin-top: 42px;
-}
-
-/* re position technology content */
-.skills > div {
-  display: flex;
-  margin: 24px 0 0 26px;
-  justify-content: space-between;
-}
-
-/* style technologies contents */
-.skills > div p {
-  color: rgba(0, 0, 0, 0.445);
-  font-size: 20px;
-  margin-right: 34px;
-}
-
-/* style skills content */
-.skills > div h2 {
-  font-size: 20px;
-  font-weight: 500px;
-}
-
-/* style line */
-.skills hr {
+#skills hr {
   width: 327px;
   color: #f1f1f4;
-  margin: 23px 0 0 18px;
+  margin: 23px 0 0 0;
+}
+
+.contact {
+  width: 375px;
+  height: 779px;
 }
