@@ -269,40 +269,41 @@ nav .menu-button {
   text-align: center;
   width: 375px;
   height: 820px;
-  background-color: #6070FF;
+  background-color: #6070ff;
   background-image: url("images/contact-form-shape.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.contact div{
-  position:relative;
+.contact div {
+  position: relative;
   top: 50px;
   font-weight: 400px;
   font-size: 20px;
   line-height: 28px;
-  color: #EBEBFF;
+  color: #ebebff;
   width: 327px;
   height: 102px;
   text-align: center;
 }
 
-.contact h1{
+.contact h1 {
   color: white;
   margin-bottom: 20px;
 }
 
-.contact > form{
+.contact > form {
   position: relative;
-  top:150px
+  top: 150px;
 }
 
-form ul input, textarea{
-  background-color:#FFFFFF;
+form ul input,
+textarea {
+  background-color: #fff;
   margin-bottom: 20px;
   padding: 10px;
   outline: none;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 310px;
   height: 48;
@@ -312,24 +313,25 @@ form ul input, textarea{
   line-height: 20px;
 }
 
-.contact .userinput:focus{
-  border:3px solid #2230d2;
+.contact .userinput:focus {
+  border: 3px solid #2230d2;
 }
 
-.contact textarea{
-  height: 170px
+.contact textarea {
+  height: 170px;
 }
 
-.contact .btn{
+.contact .btn {
   width: 140px;
-  color: #6070FF;
+  color: #6070ff;
 }
-.contact .btn:hover{
+
+.contact .btn:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: white;
 }
 
-.contact .btn:active{
+.contact .btn:active {
   background: #2230d2;
 }
