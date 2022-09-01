@@ -207,7 +207,7 @@ nav .menu-button {
 
 /* postion about me section */
 .about {
-  width: 375px;
+  width: 372px;
   height: 1180px;
   display: flex;
   flex-direction: column;
@@ -258,4 +258,81 @@ nav .menu-button {
   width: 327px;
   color: #f1f1f4;
   margin: 23px 0 0 0;
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  width: 375px;
+  height: 820px;
+  background-color: #6070ff;
+  background-image: url("images/contact-form-shape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact div {
+  position: relative;
+  top: 50px;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  width: 327px;
+  height: 102px;
+  text-align: center;
+}
+
+.contact h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact > form {
+  position: relative;
+  top: 150px;
+}
+
+form ul input,
+textarea {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 310px;
+  height: 48;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.contact .userinput:focus {
+  border: 3px solid #2230d2;
+}
+
+.contact textarea {
+  height: 170px;
+}
+
+.contact .btn {
+  width: 140px;
+  color: #6070ff;
+}
+
+.contact .btn:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: white;
+}
+
+.contact .btn:active {
+  background: #2230d2;
 }

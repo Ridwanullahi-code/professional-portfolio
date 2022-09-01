@@ -6,6 +6,7 @@
 * Header section
 * Work section
 * About section
+* Contact form section
 
 ## **Build with:**
 
