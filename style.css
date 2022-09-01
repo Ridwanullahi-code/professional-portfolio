@@ -371,10 +371,9 @@ textarea {
   nav {
     padding: 0 154px 0 154px;
   }
-  
+
   nav li:nth-child(-n+3) {
     display: inline;
-   
   }
 
   nav li:last-child {
@@ -461,25 +460,23 @@ textarea {
   textarea {
     width: 447px;
   }
-  #skills{
+
+  #skills {
     margin-top: 80px;
   }
 
- .skill-list{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
- }
+  .skill {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 24px;
+  }
 
- .skill {
-  width: 122px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
- }
- #skills hr {
-  width: 550px;
- 
+  #skills hr {
+    width: 550px;
+  }
 }
-}
-
