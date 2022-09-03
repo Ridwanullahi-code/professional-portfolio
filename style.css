@@ -479,4 +479,34 @@ textarea {
   #skills hr {
     width: 550px;
   }
+  /* Transition and Animation */
+  .project-image:hover{
+    transform: scale(0.7);
+    transition:transform 0.5s ease;
+  }
+
+  .userinput:hover::placeholder{
+    transform: translate(20px,0);
+  }
+  nav li a:hover{
+    font-size:18px ;
+    transition:font-size 0.3s ease;
+  }
+
+  /* transition the navbar element size */
+  .logo{
+    animation-name: rotate-logo;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+  }
+  @keyframes rotate-logo {
+    0%{
+      transform: rotate(0deg);
+    }
+
+    100%{
+      transform: rotate(360deg)
+    }
+  }
+  
 }
