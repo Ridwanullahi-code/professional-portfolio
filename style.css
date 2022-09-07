@@ -433,6 +433,14 @@ textarea {
     justify-content: space-around;
   }
 
+  .about h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #091e42;
+    margin-bottom: 12px;
+    line-height: 52px;
+  }
+
   .about .intro > p {
     width: 447px;
     height: 102px;
@@ -455,6 +463,7 @@ textarea {
     width: 569px;
     height: 102px;
   }
+
 
   form .userinput,
   textarea {
