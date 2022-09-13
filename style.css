@@ -10,14 +10,17 @@
 }
 
 body {
-  width: 375px;
+  max-width: 480px;
+  background:whitesmoke;
 }
 
 .navbar {
+  max-width:auto;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding:20px 20px; 
+  padding:20px 20px;
+  background: white; 
 }
 
 .nav-logo {
@@ -48,13 +51,14 @@ body {
   position:absolute;
   top:60px;
   left:30px;
-  line-height: 40px;
+  line-height: 44px;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .hamburger{
   cursor: pointer;
   display:block;
-
 }
 
 .hamburger.active .bar:nth-child(1){
@@ -80,6 +84,7 @@ body {
 
 .headline {
   background: url('images/shape2.svg');
+  background: white;
   border: 1px solid rgba(255, 255, 255, 0.572);
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +113,7 @@ body {
   font-weight: 400px;
   font-style: normal;
   color: #344563;
-  width: 327px;
+  max-width: 327px;
   height: 146px;
 }
 
@@ -127,6 +132,7 @@ body {
 }
 
 .work-section {
+
   display: grid;
   justify-content: center;
  
@@ -138,7 +144,7 @@ body {
   flex-direction: column;
   background-color: white;
   height: 585px;
-  width: 327px;
+  margin:0 auto;
   margin: 40px 0;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -161,7 +167,7 @@ body {
   color: #172b4d;
   line-height: 44px;
   font-weight: 700px;
-  width: 295px;
+  max-width: 295px;
 }
 
 /* postion project frame */
@@ -241,13 +247,13 @@ body {
 
 /* postion about me section */
 .about {
-  width: 372px;
+  margin:0 auto;
   height: 1180px;
   display: flex;
   flex-direction: column;
   background: white;
   border: 1px solid white;
-  border-radius: 0 80px 0 0;
+  border-radius: 0 80px 0 0; 
 }
 
 #skills {
@@ -289,19 +295,18 @@ body {
 }
 
 #skills hr {
-  width: 327px;
+  max-width: auto;
   color: #f1f1f4;
-  margin: 23px 0 0 0;
+  margin: 23px 24px 0 0;
 }
 
 .contact {
+  max-width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   text-align: center;
-  width: 375px;
   height: 820px;
   background-color: #6070ff;
   background-image: url("images/contact-form-shape.png");
@@ -313,11 +318,11 @@ body {
   position: relative;
   top: 50px;
   font-weight: 400px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   color: #ebebff;
-  width: 327px;
-  height: 102px;
+  max-width: 327px;
+  max-height: 102px;
   text-align: center;
 }
 
@@ -334,13 +339,13 @@ body {
 form ul input,
 textarea {
   background-color: #fff;
-  margin-bottom: 20px;
+  margin: 10px 24px;
   padding: 10px;
   outline: none;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 310px;
   height: 48;
+  width:300px;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -376,15 +381,7 @@ textarea {
     padding: 0;
   }
   body{
-    width: 100%;
-  }
-
-  main {
-   
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 100%;
   }
 
   header {
@@ -407,17 +404,14 @@ textarea {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    width:100%;
     height: 916px;
   }
-
-  /* margin: 300px 226px 0 226px; */
-  .summary {
-    margin: 100px auto;
-  }
-
+.summary{
+  margin:180px auto;
+}
+  
   .intro p {
-    width: 920px;
+    max-width: 920px;
     height: 98px;
     font-size: 20px;
   }
@@ -430,20 +424,22 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    
   }
 
   .projects {
-    width: 1156px;
+    width: 1180px;
     height: 496px;
     color: white;
     display: flex;
     flex-direction: row;
+    margin:30px auto;
   }
 
   .project-image,
   .projects-describe {
     height: 448px;
-    width: 548px;
+    max-width: 548px;
     margin: 24px 24px;
   }
 
@@ -472,25 +468,6 @@ textarea {
     margin-top: 40px;
   }
 
-  .contact {
-    width: 1440px;
-    background-image: url('images/contact-destop-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 80px 0 0 0;
-    border: 1px solid  #6070ff;
-  }
-
-  .contact > div {
-    width: 569px;
-    height: 102px;
-  }
-
-  form .userinput,
-  textarea {
-    width: 447px;
-  }
-
   #skills {
     margin-top: 80px;
   }
@@ -510,12 +487,27 @@ textarea {
     width: 550px;
   }
 
-  /* Transition and Animation */
-  .project-image:hover {
-    transform: scale(0.7);
-    transition: transform 0.5s ease;
+  .contact{
+    background-image: url('images/contact-destop-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 80px 0 0 0;
+    margin:0 auto;
+    border: 1px solid  #6070ff;
   }
 
+  .contact > div {
+    width: 569px;
+    height: 102px;
+  }
+
+  form .userinput,
+  textarea {
+    width: 447px;
+  }
+
+  
   .userinput:hover::placeholder {
     transform: translate(20px, 0);
   }
