@@ -11,19 +11,19 @@
 
 body {
   max-width: 480px;
-  background:whitesmoke;
+  background: whitesmoke;
 }
 
-header{
+header {
   background: white;
 }
 
 .navbar {
-  max-width:auto;
-  display:flex;
+  max-width: auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:20px 20px;
+  padding: 20px 20px;
 }
 
 .nav-logo {
@@ -32,57 +32,55 @@ header{
   font-weight: bolder;
 }
 
-
 .nav-link {
   color: #344563;
   font-size: 18px;
-
 }
 
-.nav-link:hover{
+.nav-link:hover {
   text-decoration: underline;
   transition: text-decoration 2s ease;
 }
 
-.nav-menu{
-  display:none
+.nav-menu {
+  display: none;
 }
 
 .show-menu {
-  display:block;
+  display: block;
   gap: 30px;
-  position:absolute;
-  top:60px;
-  left:30px;
+  position: absolute;
+  top: 60px;
+  left: 30px;
   line-height: 44px;
   font-weight: 600;
   font-size: 32px;
 }
 
-.hamburger{
+.hamburger {
   cursor: pointer;
-  display:block;
+  display: block;
 }
 
-.hamburger.active .bar:nth-child(1){
+.bar {
+  display: block;
+  width: 23px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
+}
+
+.hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(2){
+.hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(3){
+.hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
-
-.bar{
-  display:block;
-  width:23px;
-  height:3px;
-  margin:5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color:#6070ff;
 }
 
 .headline {
@@ -97,7 +95,7 @@ header{
 
 /* Position summary about me section */
 .intro {
-  margin:180px 24px 0;
+  margin: 180px 24px 0;
 }
 
 /* Styling for welcome part */
@@ -135,10 +133,8 @@ header{
 }
 
 .work-section {
-
   display: grid;
   justify-content: center;
- 
 }
 
 /* style work section part */
@@ -147,7 +143,7 @@ header{
   flex-direction: column;
   background-color: white;
   height: 585px;
-  margin:0 auto;
+  margin: 0 auto;
   margin: 40px 0;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -250,13 +246,13 @@ header{
 
 /* postion about me section */
 .about {
-  margin:0 auto;
+  margin: 0 auto;
   height: 1180px;
   display: flex;
   flex-direction: column;
   background: white;
   border: 1px solid white;
-  border-radius: 0 80px 0 0; 
+  border-radius: 0 80px 0 0;
 }
 
 #skills {
@@ -348,15 +344,15 @@ textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 48;
-  width:300px;
+  width: 300px;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
 }
 
-form [name]::placeholder{
-  font-size:15px;
+form [name]::placeholder {
+  font-size: 15px;
 }
 
 .contact .userinput:focus {
@@ -387,7 +383,8 @@ form [name]::placeholder{
     margin: 0;
     padding: 0;
   }
-  body{
+
+  body {
     max-width: 100%;
   }
 
@@ -398,11 +395,11 @@ form [name]::placeholder{
   .nav-menu {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
   }
-  
-  .hamburger{
-    display:none;
+
+  .hamburger {
+    display: none;
   }
 
   .headline {
@@ -413,10 +410,11 @@ form [name]::placeholder{
     flex-direction: column;
     height: 916px;
   }
-.summary{
-  margin:180px auto;
-}
-  
+
+  .summary {
+    margin: 180px auto;
+  }
+
   .intro p {
     max-width: 920px;
     height: 98px;
@@ -431,7 +429,6 @@ form [name]::placeholder{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    
   }
 
   .projects {
@@ -440,7 +437,7 @@ form [name]::placeholder{
     color: white;
     display: flex;
     flex-direction: row;
-    margin:30px auto;
+    margin: 30px auto;
   }
 
   .project-image,
@@ -494,13 +491,12 @@ form [name]::placeholder{
     width: 550px;
   }
 
-  .contact{
+  .contact {
     background-image: url('images/contact-destop-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 80px 0 0 0;
-    margin:0 auto;
+    margin: 0 auto;
     border: 1px solid  #6070ff;
   }
 
@@ -514,7 +510,6 @@ form [name]::placeholder{
     width: 447px;
   }
 
-  
   .userinput:hover::placeholder {
     transform: translate(20px, 0);
   }
