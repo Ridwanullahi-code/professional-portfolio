@@ -10,59 +10,86 @@
 }
 
 body {
-  background-color: #e5e5e5;
-}
-
-/* Design and set the main page to center */
-main {
-  margin: auto;
-  background-color: #f7f7f9;
   width: 375px;
 }
 
-.header-container {
-  height: 718px;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 0 0 0 80px;
-}
-
-/* position navigation container */
-nav {
-  display: flex;
+.navbar {
+  display:flex;
   justify-content: space-between;
-  flex-direction: row;
-  margin: 24px 0 0 24px;
+  align-items: center;
+  padding:20px 20px; 
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin-right: 40px;
-}
-
-li a {
-  color: #344563;
-  font-size: 15px;
-}
-
-/* styling for logo name  */
-nav .logo {
+.nav-logo {
   color: #6070ff;
   font-size: 18px;
   font-weight: bolder;
 }
 
+
+.nav-link {
+  color: #344563;
+  font-size: 18px;
+
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  transition: text-decoration 2s ease;
+}
+
+.nav-menu{
+  display:none
+}
+
+.show-menu {
+  display:block;
+  gap: 30px;
+  position:absolute;
+  top:60px;
+  left:30px;
+  line-height: 40px;
+}
+
+.hamburger{
+  cursor: pointer;
+  display:block;
+
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar{
+  display:block;
+  width:23px;
+  height:3px;
+  margin:5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color:#6070ff;
+}
+
 .headline {
-  background-image: url("images/shape2.svg");
-  position: absolute;
-  top: 16%;
+  background: url('images/shape2.svg');
+  border: 1px solid rgba(255, 255, 255, 0.572);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 80px;
+  height: 680px;
 }
 
 /* Position summary about me section */
 .intro {
-  margin: 150px 24px 0;
+  margin:180px 24px 0;
 }
 
 /* Styling for welcome part */
@@ -99,12 +126,10 @@ nav .logo {
   margin: 10px 0 0 10px;
 }
 
-/* position work section */
 .work-section {
-  position: relative;
-  top: 95%;
   display: grid;
   justify-content: center;
+ 
 }
 
 /* style work section part */
@@ -174,10 +199,6 @@ nav .logo {
   padding: 4px 12px;
   font-weight: 500px;
   color: #6070ff;
-}
-
-nav li:nth-child(-n+3) {
-  display: none;
 }
 
 /* style all the clickable buttons */
@@ -354,39 +375,40 @@ textarea {
     margin: 0;
     padding: 0;
   }
+  body{
+    width: 100%;
+  }
 
   main {
-    width: 100%;
+   
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .header-container {
-    width: 100%;
-    height: 916px;
+  header {
+    padding: 25px 154px 0 154px;
   }
 
-  nav {
-    padding: 0 154px 0 154px;
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
   }
-
-  nav li:nth-child(-n+3) {
-    display: inline;
-  }
-
-  nav li:last-child {
-    display: none;
+  
+  .hamburger{
+    display:none;
   }
 
   .headline {
-    width: 100%;
     background-image: url('images/destop-version-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    width:100%;
+    height: 916px;
   }
 
   /* margin: 300px 226px 0 226px; */
@@ -499,12 +521,12 @@ textarea {
   }
 
   nav li a:hover {
-    font-size: 18px;
+    text-decoration: underline;
     transition: font-size 0.3s ease;
   }
 
   /* transition the navbar element size */
-  .logo {
+  .nav-logo {
     animation-name: rotate-logo;
     animation-duration: 1.5s;
     animation-delay: 0.5s;

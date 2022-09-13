@@ -10,55 +10,50 @@
 </head>
 
 <body>
-    <!-- home page header -->
+    <header>
+        
+        <!-- Navigation  bar containr-->
+        <nav class="navbar">
+            <a class="nav-logo" href="">My Logo</a>
+            <!-- static menu button -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#portfolio-section" onclick="closeItem()">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-section" onclick="closeItem()">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-section" onclick="closeItem()">Contact</a></li>
+            </ul> 
+            <div class="hamburger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>                    
+        </nav>  
+    </header>
     <main>
-        <div class="header-container">
-            <header>
-                <!-- Navigation  bar containr-->
-                <nav class="navigation_container">
-                    <a class="logo" href="">My Logo</a>
-                    <!-- static menu button -->
-                    <ul>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2 menu-button"
-                            width="44" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6070ff" 
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="4" y1="6" x2="20" y2="6" />
-                            <line x1="4" y1="12" x2="20" y2="12" />
-                            <line x1="4" y1="18" x2="20" y2="18" />
-                        </svg></li>
-                    </ul>                     
-                </nav>  
-            </header>
-            <!-- headline section -->
-            <section class="headline">
-                <!-- briefly summary section -->
-                <div class="summary">
-                    <div class="intro">
-                        <h1>I’m Alexandra <br>Glad to see you!</h1>
-                        <p>I can help you build a product , feature or website Look through some of my work and experience! If
-                            you like what you see and have a project you need coded,
-                            don’t hestiate to contact me.</p>
-                    </div>
-                    <!-- social medials lins -->
-                    <div class="social-medials">
-                        <p>LET’S CONNECT</p>
-                        <ul class="social-icons">
-                            <li><a href="https://github.com/Ridwanullahi-code"><img src="images/github.png" alt="github website logo"></a></li>
-                        <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="images/Vector.png" alt="two sure finger logo"></a></li>
-                        <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="images/Linkedin.png" alt="linkedin website logo"></a></li>
-                        <li><a href="https://twitter.com/Ridwanullahi22"><img src="images/twitter.png" alt="twitter website logo"></a></li>
-                        <li><a href="https://github.com/Ridwanullahi-code"><img src="images/medium.png" alt="medium website logo"></a></li>
-                        </ul>      
-                    </div>
+        <!-- headline section -->
+        <section class="headline">
+            <!-- briefly summary section -->
+            <div class="summary">
+                <div class="intro">
+                    <h1>I’m Alexandra <br>Glad to see you!</h1>
+                    <p>I can help you build a product , feature or website Look through some of my work and experience! If
+                        you like what you see and have a project you need coded,
+                        don’t hestiate to contact me.</p>
                 </div>
-            </section>
-        </div>
+                <!-- social medials lins -->
+                <div class="social-medials">
+                    <p>LET’S CONNECT</p>
+                    <ul class="social-icons">
+                        <li><a href="https://github.com/Ridwanullahi-code"><img src="images/github.png" alt="github website logo"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="images/Vector.png" alt="two sure finger logo"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="images/Linkedin.png" alt="linkedin website logo"></a></li>
+                    <li><a href="https://twitter.com/Ridwanullahi22"><img src="images/twitter.png" alt="twitter website logo"></a></li>
+                    <li><a href="https://github.com/Ridwanullahi-code"><img src="images/medium.png" alt="medium website logo"></a></li>
+                    </ul>      
+                </div>
+            </div>
+        </section>
        
-        <section class="work-section">
+        <section class="work-section" id="portfolio-section">
             <div class="projects project1">
                 <img class ='project-image' src="images/project1.png" alt="screenshot of project one">
 
@@ -130,9 +125,9 @@
                     <a class="button" href="">See Project</a>
                 </div>
             </div> 
-         </section> 
+        </section> 
 
-         <section class="about">
+        <section class="about" id="about-section">
             <div class="about-summary">
                 <div class="intro">
                     <h2>About<br>Myself</h2>
@@ -141,7 +136,7 @@
                         don’t hestiate to contact me.
                     </p>
                 </div>
-                    <!-- social medials lins -->
+        
                 <div class="social-medials">
                     <p>LET’S CONNECT</p>
                     <ul class="social-icons">
@@ -154,12 +149,10 @@
                     </ul>      
                 </div>
                 <div>
-                    <!-- button to download resume -->
                     <a class="button btn" href="">Get my resume</a>
                 </div>
             </div>
             
-            <!-- area-->
             <div id="skills">
                 <ul>
                     <li class="language h2">Language</li>
@@ -176,9 +169,9 @@
                 </ul>
                 <hr>
             </div>    
-        </section>
+        </section> 
 
-        <section class="contact">
+        <section class="contact" id="contact-section">
             <div>
                 <h2>Contact me</h2>
                 <p>If you have an application you 
@@ -210,6 +203,7 @@
                 </ul>
             </form>
         </section>
-    </main>   
+    </main> 
+    <script src="index.js"></script>  
 </body>
 </html>
