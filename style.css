@@ -391,12 +391,11 @@ form [name]::placeholder {
   color: white;
 }
 
-
 .contact .btn:active {
   background: #2230d2;
 }
 
-.error{
+.error {
   color: orange;
   background-color: blue;
   font-size: 15px;
@@ -474,7 +473,8 @@ form [name]::placeholder {
     flex-direction: row;
     margin: 30px auto;
   }
-  .tools{
+
+  .tools {
     width: 210px;
     overflow: hidden;
   }
