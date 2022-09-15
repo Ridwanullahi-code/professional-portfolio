@@ -12,6 +12,7 @@
 body {
   max-width: 480px;
   background: whitesmoke;
+  height: 100%;
 }
 
 header {
@@ -159,7 +160,7 @@ header {
   height: 585px;
   margin: 0 auto;
   margin: 40px 0;
-  padding:12px;
+  padding: 12px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
@@ -167,7 +168,7 @@ header {
 /* positon and size projects snapshoot */
 .project-image {
   height: 220px;
-  width:100%;
+  width: 100%;
 }
 
 /* position projects description */
