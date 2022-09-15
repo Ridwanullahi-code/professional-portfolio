@@ -208,6 +208,8 @@ header {
   display: flex;
   gap: 12px;
   margin-top: 24px;
+  width: 210px;
+  overflow: hidden;
 }
 
 /* style technologies used */
@@ -389,8 +391,15 @@ form [name]::placeholder {
   color: white;
 }
 
+
 .contact .btn:active {
   background: #2230d2;
+}
+
+.error{
+  color: orange;
+  background-color: blue;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -464,6 +473,10 @@ form [name]::placeholder {
     display: flex;
     flex-direction: row;
     margin: 30px auto;
+  }
+  .tools{
+    width: 210px;
+    overflow: hidden;
   }
 
   .project-image,

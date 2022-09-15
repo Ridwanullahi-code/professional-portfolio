@@ -95,18 +95,16 @@
 .card-description {
   font-weight: 400;
   font-size: 15px;
-
-  /* width:311px; */
   height: 220px;
   line-height: 24px;
   color: #344563;
   overflow: hidden;
 }
 
-.tools {
+.tech{
   display: flex;
   align-items: center;
-  width: 210px;
+  width: 200px;
   overflow: hidden;
   margin-bottom: 10px;
 }
@@ -170,10 +168,10 @@
     margin-top: 16px;
   }
 
-  .tools {
+  .tech {
     overflow: visible;
     flex-wrap: wrap;
-    width: 250px;
+    width: 240px;
   }
 
   .card-image {
