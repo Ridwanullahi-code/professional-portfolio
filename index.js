@@ -131,3 +131,22 @@ form.addEventListener('submit', (event) => {
     email.parentElement.appendChild(error);
   }
 });
+
+
+const Name = document.querySelector('.username');
+const message = document.querySelector('.message');
+
+const data = {'name': Name,'email': email,'message':message};
+
+//<=============== web storage API ================>
+// <============= store user data from the web =======>
+
+for (const key in data) {
+  data[key].addEventListener('change',() => {
+    localStorage.setItem(key,data[key].value);
+  })
+  data[key].value = localStorage.getItem(key);
+}
+
+
+
