@@ -132,21 +132,17 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
 const Name = document.querySelector('.username');
 const message = document.querySelector('.message');
 
-const data = {'name': Name,'email': email,'message':message};
+const data = { name: Name, email, message };
 
-//<=============== web storage API ================>
+// <=============== web storage API ================>
 // <============= store user data from the web =======>
 
-for (const key in data) {
-  data[key].addEventListener('change',() => {
-    localStorage.setItem(key,data[key].value);
-  })
+Object.keys(data).forEach((key) => {
+  data[key].addEventListener('change', () => {
+    localStorage.setItem(key, data[key].value);
+  });
   data[key].value = localStorage.getItem(key);
-}
-
-
-
+});
