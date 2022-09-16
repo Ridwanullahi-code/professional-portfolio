@@ -114,3 +114,20 @@ backdrop.addEventListener('click', () => {
   modal.classList.remove('active');
   backdrop.classList.remove('show');
 });
+
+// <======== form validation ======>
+const form = document.querySelector('.form');
+const email = document.querySelector('form [type=email]');
+
+const error = document.createElement('p');
+error.innerHTML = 'email must be in lowercase, example(ridwa@gmail.com)';
+error.setAttribute('class', 'error');
+
+form.addEventListener('submit', (event) => {
+  if (email.value === email.value.toLowerCase()) {
+    form.send();
+  } else {
+    event.preventDefault();
+    email.parentElement.appendChild(error);
+  }
+});

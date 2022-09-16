@@ -396,8 +396,9 @@ form [name]::placeholder {
 }
 
 .error {
-  color: orange;
-  background-color: blue;
+  color: rgb(220, 53, 69);
+  margin-top: -10px;
+  background-color: #6070ff;
   font-size: 15px;
 }
 
