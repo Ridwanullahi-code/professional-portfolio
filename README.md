@@ -5,6 +5,12 @@
 # **Professional Portfolio** 
 ## Professional portfolio that is a collection of examples and evidence to showcase your experience, capability and potential for employment opportunities and professional development.
 
+## **Project Section:**
+
+* Header section
+* Work section
+* About section
+
 ## **Build with:**
 
 * HTML 
