@@ -4,7 +4,9 @@
   "description": "* HTML \r * CSS\r * VS Code (IDE)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch",
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,14 +20,24 @@
   },
   "homepage": "https://github.com/Ridwanullahi-code/github-flow#readme",
   "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
+    "file-loader": "^6.2.0",
     "hint": "^7.1.1",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   }
 }
