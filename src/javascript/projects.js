@@ -1,10 +1,11 @@
 import { projects } from './data.js';
 
-const workSection = document.querySelector('.work-section');
+export default function createProjects() {
+  const workSection = document.querySelector('.work-section');
 
-let projectContainer = '';
-projects.forEach((project) => {
-  projectContainer += `
+  let projectContainer = '';
+  projects.forEach((project) => {
+    projectContainer += `
       <div class="projects project1">
           <img class ='project-image' src="${project.image}" alt="screenshot of project one">
           <div class="projects-describe">
@@ -20,6 +21,7 @@ projects.forEach((project) => {
       </div>
     </div>
   `;
-});
+  });
 
-workSection.innerHTML = projectContainer;
+  workSection.innerHTML = projectContainer;
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins|Caveat');
+/* Change default web brower settings */
+* {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color:#0F2B3D;
+    max-width: auto;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav > a{
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    font-family: "Caveat","Poppins", Arial, Helvetica, sans-serif;
+}
+nav li > svg{
+    color: white;
+
+}
+
+.headline h1{
+    text-align: center;
+    font-size: 30px;
+    color:white ;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    padding: 4vh;
+    justify-content: center;
+    margin: 0 0;
+    border: 1px solid grey;
+    width: 800px;
+    box-sizing: border-box;
+    background-color: #D1D1F7;
+    margin-top: 30px;
+}
+
+form div {
+    display: flex;
+    justify-content:space-between;
+    /* width: 60%; */
+    margin: .5rem;
+}
+
+form input, select{
+    margin-right: 50px;
+    
+}
+
+form label{
+    margin:15px 0 0 40px;
+    font-size:16px;
+    font-weight: 600px;
+    font-weight:bolder;
+}
+
+
+/* form label{
+    font-size:16px;
+    font-weight: 600px;
+    font-weight:bolder;
+    font-family: 'Courier New', Courier, monospace;
+}  */
+
+form input,select{
+    width: 500px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 2vh;
+}
+
+form .btn {
+    display: flex;
+    justify-content: center;
+}
+
+form  a {
+    padding:20px 100px;
+    background-color: #565ADD;
+    border: 1px solid #565ADD;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  
+}
+
+form a:hover{
+    background-color:  #565bddda;
+}
+form a:active{
+    background-color: #014052;
+} 
+
+/* 
+Mobile: 480px
+tablet: 768px
+destop:1440px
+
+

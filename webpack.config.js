@@ -2,16 +2,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+  // entry port for created javascript files and bundle js file
   entry: path.resolve(__dirname, './src/javascript/index.js'),
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, './dist'),
     clean: true,
   },
+  // set building options to development
   mode: 'development',
+  // plugin to create bundle html file on dist folder
   plugins: [new HtmlWebpackPlugin({
     template: path.resolve(__dirname, './src/index.html'),
   })],
+  // dev server setup
   devServer: {
     static: {
       directory: path.join(__dirname, './dist'),
@@ -25,6 +29,7 @@ module.exports = {
   module: {
     rules: [
       {
+        // rule for javascript transpiling
         test: /\.(?:js|mjs|cjs)$/,
         exclude: /node_modules/,
         use: {
@@ -55,6 +60,11 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        // HTML LOADER
+        test: /\.html$/,
+        loader: 'html-loader',
       },
     ],
   },
