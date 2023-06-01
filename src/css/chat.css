@@ -1,0 +1,268 @@
+.flex-v{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.space{
+	display: flex;
+	gap:20px;
+	align-items: center;
+}
+
+.shadow{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.chat-us {
+	background-color: white;
+	border: 1px solid #ffff;
+	border-radius: 50%;
+	color:#091e42;
+	padding: 5px;
+	position:fixed;
+	bottom: 10%;
+	right:2%;
+	width: 70px;
+	height:70px;
+	font-size:35px;
+	cursor: pointer;
+}
+
+.chat-us:hover{
+	background-color: #091e42;
+	border: 1px solid #091e42;
+	color:white;
+	transition: all 0.5s ease-in-out;
+}
+
+.chat-us:active{
+	background-color:#06142e;
+	border:1px solid #06142e;
+}
+.chat-container{
+	background-color: white;
+	border: 1px solid #ffff;
+	border-radius:7px;
+	width: 390px;
+	position:fixed;
+	right:2%;
+	bottom:22%;
+}
+.chat-container .profile{
+	background-color: #fafafa;
+	max-width:100%;
+	padding:20px;
+	position: relative;
+}
+.chat-container .close{
+	position: absolute;
+	right:3%; top: 3%;
+	border:none;
+	font-size: 20px;
+	color:#474747;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.chat-container .close:hover{
+	color:black;
+	transition: all 0.3s ease-in-out;
+}
+.chat-container .photo{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+}
+.chat-container .title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.chat-container .dm-container{
+	display: none;
+	gap:20px;
+	align-items: center;
+	padding:50px 20px;
+}
+.chat-container .dm{
+	background-color: #f1f0f0;
+	border: 1px solid #f1f0f0;
+	border-radius: 0 12px 12px 12px;
+	padding:6px;
+	width:250px;
+	font-size: 13px;
+	text-align: justify;
+	font-weight: lighter;
+}
+
+.chat-container .live-social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 15px;
+	text-align: center;
+	gap:10px;
+}
+
+.chat-container .start-chat-text{
+	text-align: center;
+	font-weight: bolder;
+	margin:10px;
+}
+
+.chat-container .live-social i{
+	color:white;
+}
+.chat-container .whatsapp{
+	background-color: #25D366;
+	border: 2px solid #25D366;
+	border-radius: 6px;
+}
+
+.chat-container .whatsapp:hover{
+	background-color: #128C7E;
+	border: 2px solid #128C7E;
+}
+
+.chat-container .facebook{
+	background-color: #3B5998;
+	border: 2px solid #3B5998;
+	border-radius: 6px;
+}
+.chat-container .facebook:hover{
+	background-color: #2F477A;
+	border: 2px solid #2F477A;
+}
+.chat-container .messenger{
+	background-color: #0084FF;
+	border: 2px solid #0084FF;
+	border-radius: 6px;
+}
+.chat-container .messenger:hover{
+	background-color: #0064C9;
+	border: 2px solid #0064C9;
+}
+.chat-container .phone{
+	background-color: #776BB8;
+	border: 2px solid #776BB8;
+	border-radius: 6px;
+}
+
+.chat-container .phone:hover{
+	background-color: #5C4C9A;
+	border: 2px solid #5C4C9A;
+}
+
+.chat-container .email{
+	background-color: #D44638;
+	border: 2px solid #D44638;
+	border-radius: 6px;
+}
+.chat-container .email:hover {
+	background-color: #B03A2E;
+	border: 2px solid #B03A2E;
+}
+.chat-container ul {
+	width:100%;
+}
+.chat-container li{
+	width: 20%;
+	height:50px;
+	cursor:pointer;
+}
+
+.hide-container{
+	display: none;
+}
+
+.show-chat{
+	display:flex;
+	transition: all 0.5s ease-in-out;
+}
+
+@keyframes messageAnimation {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.chat-message {
+	animation: messageAnimation 0.5s ease-in-out;
+}
+
+.wave-emoji {
+	display: inline-block;
+	font-size: 15px;
+	animation: waveAnimation 2s ease-in-out infinite;
+}
+
+@keyframes waveAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(40deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.progress-container {
+	width: 100%;
+	height: 8px;
+	position: fixed;
+	background: transparent;
+	top:11.4%;
+	z-index: 1000;	
+}
+
+.progress-bar {
+	height: 8px;
+	background: #6070FF;
+	width: 0;
+}
+
+.tooltip {
+	position: relative;
+}
+
+.tooltip::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	transform: translateX(-50%, 5px);
+	padding: 6px 12px;
+	background-color: #344563;
+	color: #fff;
+	font-size: 14px;
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.hidden{
+	display: none;
+}

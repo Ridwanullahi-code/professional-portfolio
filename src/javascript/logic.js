@@ -1,4 +1,5 @@
-import { projects, cards } from './data.js';
+import projects from './data.js';
+import getImages from './images.js';
 
 export default function logic() {
   const hamburger = document.querySelector('.hamburger');
@@ -19,41 +20,35 @@ export default function logic() {
   });
 
   // <=============== modal popup information ====================>
-
-  const projectTitle = document.querySelectorAll('.project-title');
-  const projectImage = document.querySelectorAll('.project-image');
-  const projectDescpt = document.querySelectorAll('.description');
-
   const cardTitle = document.querySelector('.card-title');
   const cardImage = document.querySelector('.card-image');
   const description = document.querySelector('.card-description');
   const modalButton = document.querySelectorAll('.modal-button');
 
-  // store each project's information into object
-  for (let i = 0; i < projects.length; i += 1) {
-    projectTitle[i].innerHTML = projects[i].name;
-    projectImage[i].src = projects[i].image;
-    projectDescpt[i].innerHTML = projects[i].description;
-  }
-
   // get the modal popup initial elements
-  const buttons = document.querySelectorAll('.see-project-btn');
+  const buttons = document.querySelectorAll('.see-project');
   const modal = document.querySelector('.card');
   const closeButton = document.querySelector('.close-button');
   const backdrop = document.querySelector('#backdrop');
 
   // <=============== Function to show modal ======================>
-  for (let i = 0; i < buttons.length; i += 1) {
+  for (let i = 0; i < projects.length; i += 1) {
     buttons[i].addEventListener('click', () => {
       modal.classList.toggle('active');
       backdrop.classList.toggle('show');
       cardTitle.innerHTML = projects[i].name;
-      description.innerHTML = cards.description;
-      cardImage.src = projects[i].image;
+      description.innerHTML = projects[i].description;
+      cardImage.src = getImages[i];
       modalButton[0].href = projects[i].demo;
       modalButton[1].href = projects[i].link;
     });
   }
+
+  const techList = document.querySelectorAll('.tool-list');
+
+  techList.forEach((tech, index) => {
+    tech.innerHTML = projects[index].technologies[index];
+  });
   // <=============== Function to close modal ===============>
   closeButton.addEventListener('click', () => {
     modal.classList.remove('active');
@@ -96,5 +91,19 @@ export default function logic() {
       localStorage.setItem(key, data[key].value);
     });
     data[key].value = localStorage.getItem(key);
+  });
+
+  // accordion button
+  const accordion = document.querySelector('.skills');
+  accordion.addEventListener('click', (event) => {
+    if (event.target.classList.contains('accordion-btn')) {
+      event.target.parentElement.nextElementSibling.classList.toggle('displayer');
+      const btn = event.target.parentElement.children[1];
+      if (btn.classList.contains('fa-chevron-down')) {
+        btn.classList.replace('fa-chevron-down', 'fa-chevron-right');
+      } else {
+        btn.classList.replace('fa-chevron-right', 'fa-chevron-down');
+      }
+    }
   });
 }

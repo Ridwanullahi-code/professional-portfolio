@@ -5,55 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ridwan's Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Ridwan Ajayi - Software Engineer | Software Developer">
+    <meta name="description"
+        content="Building Innovative Solutions: Expert Software Development for Frontend, Backend, and Python. Transforming Ideas into Powerful Applications. Leveraging Cutting-Edge Technologies for Seamless User Experiences. Proven Track Record, Pristine Code Quality, and Client Satisfaction Guaranteed.">
+
+    <meta property="og:description"
+        content="Software developer specializing in full stack web development, frontend and backend development, HTML/CSS, React/Redux, and TailwindCSS.">
+
+    <meta name="keywords"
+        content="software engineer, software developer, full stack web development, frontend developer, backend developer, professional developer, HTML/CSS developer, React/Redux developer, TailwindCSS">
+    <title>Ridwan Ajayi - Software Engineer | Software Developer | Full Stack Web Development |
+        Frontend Developer | Backend Developer |
+        Professional Developer | HTML/CSS Developer |
+        React/Redux Developer with TailwindCSS
+    </title>
 </head>
 
 <body>
     <header>
         <!-- Navigation  bar containr-->
         <nav class="navbar">
-            <a class="nav-logo" href="">My Logo</a>
+            <a class="nav-logo" href="#headline">Ridwan</a>
             <!-- static menu button -->
             <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="#portfolio-section">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio-section">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
-            </ul> 
+            </ul>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>                    
-        </nav>  
+            </div>
+        </nav>
     </header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <main>
         <!-- headline section -->
-        <section class="headline">
+        <section class="headline" id="headline">
             <!-- briefly summary section -->
             <div class="summary">
                 <div class="intro">
                     <h1>I’m Ridwan <br>Glad to see you!</h1>
-
-                    <p>I can help you build user-focused
-                        websites and applications that will increase business productivity, actuate competition
-                        advantages and revenue growth. Look through some of my work and experience! If
-                        you like what you see and have a project you need coded,
-                        don’t hestiate to contact me.</p>
+                    <p>Software Developer passionate about building accessible web apps that users love</p>
+                    <a class="contact-me" href="mailto: ridwanullahiajayi01@gmail.com">CONTACT ME</a>
+                    <a class="scroll-down" href="#contact-section">
+                        <span>🖱️</span>
+                        <span>Scroll down</span>
+                         <i class="fa-solid fa-arrow-down"></i>
+                    </a>
                 </div>
-                <!-- social medials lins -->
-                <div class="social-medials">
-                    <p>LET’S CONNECT</p>
-                    <ul class="social-icons">
-                        <li><a href="https://github.com/Ridwanullahi-code"><img src="./assets/images/github.png" alt="github website logo"></a></li>
-                    <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="./assets/images/Vector.png" alt="two sure finger logo"></a></li>
-                    <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="./assets/images/Linkedin.png" alt="linkedin website logo"></a></li>
-                    <li><a href="https://twitter.com/Ridwanullahi22"><img src="./assets/images/twitter.png" alt="twitter website logo"></a></li>
-                    <li><a href="https://github.com/Ridwanullahi-code"><img src="./assets/images/medium.png" alt="medium website logo"></a></li>
-                    </ul>      
-                </div>
+                <ul class="social-icon">
+                    <li class="tooltip" data-tooltip="Twitter">
+                        <a target="_blank" href="https://twitter.com/ALEX14809153">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="tooltip" data-tooltip="Linkedin">
+                        <a target="_blank" href="https://www.linkedin.com/in/alexogeto/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="tooltip" data-tooltip="Medium">
+                        <a target="_blank" href="https://medium.com/@alexogeto54">
+                            <i class="fab fa-medium-m"></i>
+                        </a>
+                    </li>
+                    <li class="tooltip" data-tooltip="GitHub">
+                        <a target="_blank" href="https://github.com/Osoro254Alex">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </li>
+                    <li class="tooltip" data-tooltip="WellFound">
+                        <a target="_blank" href="https://wellfound.com/u/alex-ogeto">
+                            <i class="far fa-hand-peace"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
-        
+
         <section class="work-section center" id="portfolio-section">
         </section>
 
@@ -72,10 +107,10 @@
                         </ul>
                     </div>
                     <div>
-                        <img class ='card-image' src ='#' alt="screenshot of project one">
+                        <img class='card-image' src='#' alt="screenshot of project one">
                     </div>
                 </div>
-            
+
                 <div class="container modal-body">
                     <p class="card-description"></p>
                     <div class="tech-container">
@@ -86,93 +121,229 @@
                             <li class="tool-list"></li>
                         </ul>
                         <div class="project buttons">
-                            <a href="" class="modal-button" target="_blank">See live <img src="./assets/images/Export-icon.png" alt=""></a>
-                            <a href="" class="modal-button" target="_blank">See live <img src="./assets/images/GitHub-icon.png" alt=""></a>
+                            <a href="" class="modal-button" target="_blank">See live <img
+                            src="./assets/images/Export-icon.png" alt=""></a>
+                            <a href="" class="modal-button" target="_blank">See live <img
+                            src="./assets/images/GitHub-icon.png" alt=""></a>
                         </div>
-                    </div>    
+                    </div>
                 </div>
-            </div> 
+            </div>
         </section>
 
         <div id="backdrop">
         </div>
 
-        <section class="about" id="about-section">
-            <div class="about-summary">
-                <div class="intro">
-                    <h2>About<br>Myself</h2>
-                    <p>I can help you build a product , feature or website Look through some of my work and experience! If
-                        you like what you see and have a project you need coded,
-                        don’t hestiate to contact me.
-                    </p>
-                </div>
-        
-                <div class="social-medials">
-                    <p>LET’S CONNECT</p>
-                    <ul class="social-icons">
-                        <li><a href="https://github.com/Ridwanullahi-code"><img src="./assets/images/github.png" alt="github website logo"></a></li>
-                        <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="./assets/images/Vector.png" alt="two sure finger logo"></a></li>
-                        <li><a href="https://www.linkedin.com/in/ajayi-ridwan-2a1515199/"><img src="./assets/images/Linkedin.png" alt="linkedin website logo"></a></li>
-                        <li><a href="https://twitter.com/Ridwanullahi22"><img src="./assets/images/twitter.png" alt="twitter website logo"></a></li>
-                        <li><a href="https://github.com/Ridwanullahi-code"><img src="./assets/images/medium.png" alt="medium website logo"></a></li>
-                        
-                    </ul>      
-                </div>
-
-                <div>
-                    <a class="button btn get-resume" href="">Get my resume</a>
-                </div>
+        <section class="about">
+            <div class="TOP">
+                <h2>
+                    About Myself
+                </h2>   
+                <p>
+                    Hello I'm a software developer! I can help you build a product , feature or website Look through
+                    some of my work and experience! If you like what you see and have a project you need coded, don't
+                    hestiate to contact me.
+                </p>
+                <h3 class="connecta">
+                    LET'S CONNECT
+                </h3>
+                <ul id="socia" class="socialsa">
+                    <li>
+                        <a target="_blank" href="https://twitter.com/ALEX14809153">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/alexogeto/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://medium.com/@alexogeto54">
+                            <i class="fab fa-medium-m"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Osoro254Alex">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://wellfound.com/u/alex-ogeto">
+                            <i class="far fa-hand-peace"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="button" type="button">
+                    Download Resume
+                </button>
             </div>
-            <div id="skills">
-                <ul>
-                    <li class="language h2">Language</li>
-                    <li class="skill"><img src="./assets/images/Ellipse1.png" alt="javascript logo">Javascript</li>
-                    <li class="skill"><img src="./assets/images/Ellipse2.png" alt="html logo">HTML</li>
-                    <li class="skill"><img src="./assets/images/Ellipse3.png" alt="css logo">CSS</li>
-                </ul>
-                <ul>
-                    <li class="framework h2">Framework</li>
-                </ul>
-                <hr>
-                <ul>
-                    <li class="Skill h2">Skills</li>
-                </ul>
-                <hr>
-            </div>    
-        </section> 
-
-        <section class="contact" id="contact-section">
+            <ul class="skills">
+                <li>
+                    <div class="language">
+                        <span class="title">Frontend</span>
+                        <i id="myElement1" data-show="true" class="fas fa-chevron-down accordion-btn"></i>
+                    </div>
+                    <ul class="subjects">
+                        <li>
+                            <img src="./assets/images/Ellipse1.png" alt="javascript-image">
+                            JavaScript
+                        </li>
+                        <li>
+                            <img src="./assets/images/react.png" alt="javascript-image">
+                            React.js
+                        </li>
+                        <li>
+                            <img src="./assets/images/redux-removebg.png" alt="html-image">
+                            Redux.js
+                        </li>
+                        <li>
+                            <img src="./assets/images/Ellipse2.png" alt="javascript-image">
+                            HTML
+                        </li>
+                        <li>
+                            <img src="./assets/images/ts.png" alt="html-image">
+                            TypeScript
+                        </li>
+                        <li>
+                            <img src="./assets/images/Ellipse3.png" alt="css-image">
+                            CSS
+                        </li>
+                        <li>
+                            <img src="./assets/images/tail-removebg.png" alt="css-image">
+                            Tailwind
+                        </li>
+                        <li>
+                            <img src="./assets/images/next-js.png" alt="css-image">
+                            NextJs
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="language">
+                       <span class="title">Backend</span>
+                        <i id="myElement2" data-show="true" class="fas fa-chevron-right accordion-btn"></i>
+                    </div>
+                    <ul class="subjects displayer">
+                        <li>
+                            <img src="./assets/images/ruby-removebg.png" alt="css-image">
+                            Ruby
+                        </li>
+                        <li>
+                            <img src="./assets/images/db-removebg.png" alt="css-image">
+                            Database
+                        </li>
+                        <li>
+                            <img src="./assets/images/rails-removebg.png" alt="css-image">
+                            Rails
+                        </li>
+                        <li>
+                            <img src="./assets/images/python-removebg.png" alt="css-image">
+                            Python
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="language">
+                        <span class="title">Tools & Skills</span>
+                        <i id="myElement3" data-show="true" class="fas fa-chevron-right accordion-btn"></i>
+                    </div>
+                    <ul class="subjects displayer">
+                        <li>
+                            <strong>1.</strong>
+                            Analytical
+                        </li>
+                        <li>
+                            <strong>2.</strong>
+                            Responsive Web Design
+                        </li>
+                        <li>
+                            <strong>3.</strong>
+                            Search Engine Optimization (SEO)
+                        </li>
+                        <li>
+                            <strong>4.</strong>
+                            Testing and Debugging
+                        </li>
+                        <li>
+                            <strong>5.</strong>
+                            Git & GitHub
+                        </li>
+                        <li>
+                            <strong>6.</strong>
+                            Deployment
+                        </li>
+                        <li>
+                            <strong>7.</strong>
+                            Team Work
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="contact no-animate" id="contact-section">
             <div>
                 <h2>Contact me</h2>
-                <p>If you have an application you 
-                are interested in developing, a
-                feature that you need built or a project that 
-                needs coding. I’d love to help with it </p>
+                <p>I would love to hear about your project and how I could help. Please fill in the form, and I will get
+                    back to you as soon as possible</p>
             </div>
-            
+
             <form class="form" action="https://formspree.io/f/xyyvzqwz" method="POST">
                 <ul>
                     <li>
-                        <input class="userinput username input" type="text" 
-                        placeholder="Ridwan" name="name" required="required" maxlength="30">
+                        <input class="userinput username input" type="text" placeholder="Name" name="name"
+                            required="required" maxlength="30">
                     </li>
                     <li>
-                        <input class="userinput email input" type="email" name="email"
-                            placeholder="ridwanullahiajayi01@gmail.com" required="required">
+                        <input class="userinput email input" type="email" name="email" placeholder="Email"
+                            required="required">
                     </li>
 
                     <li>
-                        <textarea name="message" cols="30" class="message input"
-                            rows="10" placeholder="Write your message here"
+                        <textarea name="message" cols="30" class="message input" rows="10" placeholder="Message"
                             required="required" maxlength="500"></textarea>
                     </li>
-                    
+
                     <li>
-                        <input class="btn" type="submit" value="Get It Touch">
+                        <input class="btn" type="submit" value="SEND MESSAGE">
                     </li>
                 </ul>
             </form>
         </section>
+        <section class="hide-container">
+            <div class="chat-container shadow">
+                <div class="profile">
+                    <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="space">
+                        <img class="photo" src="./assets/images/my_photo.jpg" alt=" expert software developer">
+                        <div>
+                            <h4>Ridwan</h4>
+                            <p>Expert Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dm-container">
+                    <img class="photo" src="./assets/images/my_photo.jpg" alt=" expert software developer">
+                    <div class="message flex-v dm chat-message">
+                        <p class="greet">Hi there <span class="wave-emoji" role="img" aria-label="Wave">👋</p>
+                        <p class="text">Are you looking for the expert Developer to code your website? chat me to get
+                            started</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="start-chat-text">Start Chat:</p>
+                    <ul class="live-social">
+                        <li class="messenger center"><a href=""><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                        <li class="whatsapp center"><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li class="phone center"><a href=""><i class="fa-solid fa-phone"></i></a></li>
+                        <li class="email center"><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <button class="chat-us shadow" data-tooltip="Live Chat"><i class="fa-solid fa-comment-dots"></i></a></button>
+
 </body>
+
 </html>

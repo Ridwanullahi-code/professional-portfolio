@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Cookie&family=Lato:ital,wght@1,300&family=Monomaniac+One&family=Public+Sans:wght@400;700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6070FF;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #04118a;
+}
 
 /* global setting for body contents */
 * {
@@ -6,30 +23,44 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   max-width: 768px;
   background: whitesmoke;
   height: 100%;
 }
 
-header {
-  background: white;
+h1, h2, p, a, li , h3,input, ::placeholder{
+  font-family: 'Heebo', sans-serif;
 }
 
+header{
+  background-color: white;
+  border:white;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000;
+}
 .navbar {
   max-width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px 40px;
 }
 
 .nav-logo {
   color: #6070ff;
-  font-size: 18px;
+  font-size: 30px;
+  font-family: 'Cookie',
+  'Roboto',
+  sans-serif;
   font-weight: bolder;
 }
 
@@ -52,8 +83,8 @@ header {
 }
 
 .nav-link:hover {
-  text-decoration: underline;
-  transition: text-decoration 2s ease;
+  color: #030e75;
+  transition: all 0.5s ease-in-out;
 }
 
 .show-menu {
@@ -130,29 +161,54 @@ header {
 
 /* Styling for introduction section */
 .intro p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 400px;
   font-style: normal;
   color: #344563;
-  max-width: 327px;
+  width: 90%;
   height: 146px;
+  text-align: justify;
 }
 
 /* Set position of social medial icons */
-.social-medials {
-  color: #7f8cff;
-  font-size: 15px;
-  margin-left: 24px;
+.headline .summary .contact-me {
+  background-color: #384af0;
+  color:white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-radius:7px;
 }
 
-/* style social medial icons */
-.social-icons {
+.headline .summary .contact-me:hover{
+  background-color: #051497;
+}
+.headline .summary .contact-me:active{
+  background-color: #030e75;
+}
+.headline .summary .social-icon {
+  position: absolute;
   display: flex;
-  gap: 20px;
-  margin:20px 0;
+  flex-direction: column;
+  left: 5%;
+  top: 30%;
+  gap: 13px;
+  z-index: 10000;
 }
-
+.headline .summary .social-icon a{
+  color:#344563;
+  font-size: 20px;
+}
+.headline .summary .scroll-down{
+  color:#344563;
+  border:none;
+  display: block;
+  background-color: transparent;
+  margin: 80px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
 .center{
   display:flex;
   flex-direction: column;
@@ -176,6 +232,13 @@ header {
   border-radius: 16px;
 }
 
+.no-animate{
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.no-animate.animated {
+  opacity: 1;
+}
 /* positon and size projects snapshoot */
 .project-image {
   height: 300px;
@@ -187,26 +250,27 @@ header {
   margin-left: 12px;
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap:22px;
 }
 
 /* style project description */
 .project-title {
-  font-size: 2.8vw;
+  font-size: 24px;
   color: #172b4d;
-  line-height: 44px;
+  line-height: 29px;
   font-weight: 700px;
-  max-width: 295px;
+  margin-top:10px;
 }
 
+.projects-describe .stack{
+  color:#344563;
+}
 /* style projects description */
 .description {
-  margin-top: 16px;
   line-height: 24px;
   font-weight: 400px;
   font-size: 15px;
   width: 90%;
-  height: 76px;
   color: #344563;
 }
 
@@ -218,29 +282,31 @@ header {
 
 /* style technologies used */
 .tools li {
-  height: 24px;
   font-size: 1.3vw;
   background: #ebebff;
   border-radius: 8px;
   text-align: center;
-  padding: 4px 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 1vw;
   font-weight: 500px;
   color: #6070ff;
-  margin:14px 0;
 }
 
 /* style all the clickable buttons */
 .button {
   padding: 0px 20px;
-  width: 100px;
+  width: 220px;
   font-weight: 500px;
-  size: 17px;
+  font-size: 17px;
   line-height: 48px;
   color: #396df2;
   text-align: center;
   border: 1px solid #396df2;
   border-radius: 8px;
   cursor:pointer;
+  background-color: transparent;
 }
 
 .btn {
@@ -270,59 +336,29 @@ header {
 
 /* postion about me section */
 .about {
-  margin: 0 auto;
-  height: 1180px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 2rem;
   background: white;
   border: 1px solid white;
   border-radius: 0 80px 0 0;
+  margin-bottom:40px;
+  width:100%;
 }
 
-#skills {
-  position: relative;
-  top: 80px;
-  margin-left: 30px;
-}
-#skills hr{
-  width:30%;
-}
-.languages {
-  margin: 32px 30px;
+.TOP {
+  width: 100%;
 }
 
-/* style technologies used */
-.skill {
-  display: flex;
-  width: 303px;
-  margin: 32px 0;
-  color: #253858;
-  font-weight: 500px;
-  height: 67px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  align-items: center;
-  text-align: center;
-  gap: 16px;
+.about p {
+  font-size: 20px;
+  width: 100%;
+  text-align: justify;
 }
-
-.skill img {
-  margin-left: 12px;
-}
-
-.resume-button {
-  margin-left: 30px;
-}
-
-#skills .h2 {
-  font-size: 28px;
-  font-weight: 500px;
-}
-
-#skills hr {
-  max-width: 50%;
-  color: #f1f1f4;
-  margin: 23px 24px 0 0;
+.skills, .TOP {
+  width: 100%;
 }
 
 .contact {
@@ -350,9 +386,10 @@ header {
   text-align: center;
 }
 
-.contact h1 {
+.contact h2 {
   color: white;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin-bottom: 25px;
 }
 
 .contact>form {
@@ -376,12 +413,8 @@ textarea {
   line-height: 20px;
 }
 
-form [name]::placeholder {
-  font-size: 15px;
-}
-
 .contact .userinput:focus {
-  border: 3px solid #2230d2;
+  border: 1px solid #2230d2;
 }
 
 .contact textarea {
@@ -389,7 +422,7 @@ form [name]::placeholder {
 }
 
 .contact .btn {
-  width: 140px;
+  width: 150px;
   color: #6070ff;
 }
 
@@ -410,11 +443,17 @@ form [name]::placeholder {
   font-size: 15px;
 }
 
+
 /* transition the navbar element size */
 .nav-logo {
   animation-name: rotate-logo;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
+}
+
+.nav-logo:hover{
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes rotate-logo {
