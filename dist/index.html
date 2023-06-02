@@ -27,12 +27,14 @@
     <header>
         <!-- Navigation  bar containr-->
         <nav class="navbar">
-            <a class="nav-logo" href="#headline">Ridwan</a>
+            <a class="nav-logo tooltip" href="#headline" data-tooltip="Go top">Ridwan</a>
             <!-- static menu button -->
             <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="#portfolio-section">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+                <li class="nav-item tooltip" data-tooltip="See all my projects"><a class="nav-link" href="#portfolio-section">Projects</a></li>
+                <li class="nav-item tooltip" data-tooltip="Read about me"><a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item tooltip" data-tooltip="Contact me"><a class="nav-link"
+                href="#contact-section">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -49,49 +51,51 @@
         <section class="headline" id="headline">
             <!-- briefly summary section -->
             <div class="summary">
-                <div class="intro">
-                    <h1>I’m Ridwan <br>Glad to see you!</h1>
-                    <p>Software Developer passionate about building accessible web apps that users love</p>
-                    <a class="contact-me" href="mailto: ridwanullahiajayi01@gmail.com">CONTACT ME</a>
-                    <a class="scroll-down" href="#contact-section">
-                        <span>🖱️</span>
-                        <span>Scroll down</span>
-                         <i class="fa-solid fa-arrow-down"></i>
-                    </a>
+                <div>
+                    <div class="intro">
+                        <h1>I’m Ridwan <br>Glad to see you!</h1>
+                        <p>Software Developer passionate about building accessible web apps that users love
+                        </p>
+                        <div>
+                             <a class="contact-me" href="mailto: ridwanullahiajayi01@gmail.com">CONTACT ME</a>
+                        </div>
+                       
+                        <a class="scroll-down" href="#contact-section">
+                            <span>🖱️</span>
+                            <span>Scroll down</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    <ul class="social-icon">
+                        <li class="tooltip" data-tooltip="Twitter">
+                            <a target="_blank" href="https://twitter.com/Ridwanullahi22">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="tooltip" data-tooltip="Linkedin">
+                            <a target="_blank" href="https://www.linkedin.com/in/ajayi-ridwan/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="tooltip" data-tooltip="GitHub">
+                            <a target="_blank" href="https://github.com/Ridwanullahi-code">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                        <li class="tooltip" data-tooltip="WellFound">
+                            <a target="_blank" href="https://wellfound.com/u/ajayi-ridwan">
+                                <i class="far fa-hand-peace"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="social-icon">
-                    <li class="tooltip" data-tooltip="Twitter">
-                        <a target="_blank" href="https://twitter.com/ALEX14809153">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="tooltip" data-tooltip="Linkedin">
-                        <a target="_blank" href="https://www.linkedin.com/in/alexogeto/">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li class="tooltip" data-tooltip="Medium">
-                        <a target="_blank" href="https://medium.com/@alexogeto54">
-                            <i class="fab fa-medium-m"></i>
-                        </a>
-                    </li>
-                    <li class="tooltip" data-tooltip="GitHub">
-                        <a target="_blank" href="https://github.com/Osoro254Alex">
-                            <i class="fab fa-github-square"></i>
-                        </a>
-                    </li>
-                    <li class="tooltip" data-tooltip="WellFound">
-                        <a target="_blank" href="https://wellfound.com/u/alex-ogeto">
-                            <i class="far fa-hand-peace"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="blob-image">
+                </div>
             </div>
+           
         </section>
-
         <section class="work-section center" id="portfolio-section">
         </section>
-
         <section class="modal">
             <div class="card">
                 <div>
@@ -99,12 +103,8 @@
                         <h2 class="card-title">.</h2>
                         <img class="close-button" src="images/0b62c6338693ad212f2e.png" alt="close button">
                     </div>
-                    <div>
-                        <ul class="barge-list">
-                            <li>Canopy</li>
-                            <li><img src="images/81e395ff6a6907a218e4.png" alt="circle logo"> Back End Dev</li>
-                            <li><img src="images/81e395ff6a6907a218e4.png" alt="circle logo"> 2015</li>
-                        </ul>
+                    <div class="barge-list">
+                        
                     </div>
                     <div>
                         <img class='card-image' src='#' alt="screenshot of project one">
@@ -144,32 +144,32 @@
                     some of my work and experience! If you like what you see and have a project you need coded, don't
                     hestiate to contact me.
                 </p>
+                <div>
+                    <button class="contact-me">
+                        Read More
+                    </button>
+                </div>
                 <h3 class="connecta">
                     LET'S CONNECT
                 </h3>
                 <ul id="socia" class="socialsa">
-                    <li>
-                        <a target="_blank" href="https://twitter.com/ALEX14809153">
+                    <li class="tooltip" data-tooltip="Twitter">
+                        <a target="_blank" href="https://twitter.com/Ridwanullahi22">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/alexogeto/">
+                    <li class="tooltip" data-tooltip="Linkedin">
+                        <a target="_blank" href="https://www.linkedin.com/in/ajayi-ridwan/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
-                    <li>
-                        <a target="_blank" href="https://medium.com/@alexogeto54">
-                            <i class="fab fa-medium-m"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/Osoro254Alex">
+                    <li class="tooltip" data-tooltip="GitHub">
+                        <a target="_blank" href="https://github.com/Ridwanullahi-code">
                             <i class="fab fa-github-square"></i>
                         </a>
                     </li>
-                    <li>
-                        <a target="_blank" href="https://wellfound.com/u/alex-ogeto">
+                    <li class="tooltip" data-tooltip="WellFound">
+                        <a target="_blank" href="https://wellfound.com/u/ajayi-ridwan">
                             <i class="far fa-hand-peace"></i>
                         </a>
                     </li>
@@ -333,10 +333,10 @@
                 <div>
                     <p class="start-chat-text">Start Chat:</p>
                     <ul class="live-social">
-                        <li class="messenger center"><a href=""><i class="fa-brands fa-facebook-messenger"></i></a></li>
-                        <li class="whatsapp center"><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                        <li class="phone center"><a href=""><i class="fa-solid fa-phone"></i></a></li>
-                        <li class="email center"><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                        <li class="messenger center"><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                        <li class="whatsapp center"><a target="_blank" href="https://wa.me/2348144580946?text=Hey there! How can I help you?"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li class="phone center"><a target="_blank" href="tel:+2348144580946"><i class="fa-solid fa-phone"></i></a></li>
+                        <li class="email center"><a target="_blank" href="mailto:ridwanullahiajayi01@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
                     </ul>
                 </div>
             </div>

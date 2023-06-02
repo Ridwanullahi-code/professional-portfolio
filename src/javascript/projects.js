@@ -8,12 +8,15 @@ export default function createProjects() {
     const technologies = project.technologies
       .map((technology) => `<li>${technology}</li>`)
       .join('');
+
     projectContainer += `
       <div class="projects no-animate"  >
           <img class ='project-image' src="${getImages[index]}" alt="screenshot of project ${project.name}">
           <div class="projects-describe">
             <h2 class="project-title">${project.name}</h2>
-             ${project.education}
+            <div>
+              <span class="education"><span class="name">${project.education[0]} </span><i class="fa-sharp fa-solid fa-circle"></i> ${project.education[1]} <i class="fa-sharp fa-solid fa-circle"></i> ${project.education[2]}</span>
+            </div>
             <p class="description">${project.description}</p>
             <ul class="tools">
               ${technologies}

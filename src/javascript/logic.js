@@ -30,12 +30,15 @@ export default function logic() {
   const modal = document.querySelector('.card');
   const closeButton = document.querySelector('.close-button');
   const backdrop = document.querySelector('#backdrop');
+  const edu = document.querySelector('.education');
+  const popupBarge = document.querySelector('.barge-list');
 
   // <=============== Function to show modal ======================>
   for (let i = 0; i < projects.length; i += 1) {
     buttons[i].addEventListener('click', () => {
       modal.classList.toggle('active');
       backdrop.classList.toggle('show');
+      popupBarge.innerHTML = edu.innerHTML;
       cardTitle.innerHTML = projects[i].name;
       description.innerHTML = projects[i].description;
       cardImage.src = getImages[i];

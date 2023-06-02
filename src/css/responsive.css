@@ -7,7 +7,9 @@
 	body {
 		max-width: 100%;
 	}
-	
+	.navbar{
+		 padding: 20px 100px;
+	}
 	.nav-menu {
 		display: flex;
 		flex-direction: row;
@@ -35,21 +37,30 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: flex;
-		flex-direction: column;
 		height: 916px;
 		position: relative;
 	}
-
+	
 	.summary {
 		gap: 0;
-		margin: 180px auto;
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		padding: 0 100px;
 	}
-
+	
+	.intro{
+		display: flex;
+		flex-direction: column;
+		gap:30px;
+		text-align: start;
+		
+	}
 	.intro p {
-		max-width: 920px;
-		height: 98px;
+		width: 60%;
 		font-size: 20px;
 		text-align: justify;
+		word-spacing: 0;
 	}
 
 	.intro h1 {

@@ -136,26 +136,50 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0 0 0 80px;
-  height: 640px;
+  height: 980px;
 }
 
-/* Position summary about me section */
+.summary {
+  /* gap: 20px; */
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 200px 1rem;
+}
 
-.summary{
-  display:flex;
+.headline .summary .social-icon {
+  position: absolute;
+  display: flex;
   flex-direction: column;
-  gap:80px;
+  left: 5%;
+  top: 35%;
+  gap: 13px;
+}
+
+.headline .summary .social-icon a {
+  color: #344563;
+  font-size: 20px;
+}
+
+.headline .summary .scroll-down {
+  color: #344563;
+  border: none;
+  display: block;
+  background-color: transparent;
+  margin: 80px 0;
+  font-size: 12px;
+  cursor: pointer;
 }
 .intro {
-  margin: 100px 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
 }
-
 /* Styling for welcome part */
 .intro h1 {
   font-size: 40px;
   font-weight: 700;
   color: #091e42;
-  margin-bottom: 12px;
   line-height: 52px;
 }
 
@@ -163,52 +187,32 @@ header{
 .intro p {
   font-size: 20px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   color: #344563;
   width: 90%;
-  height: 146px;
-  text-align: justify;
+  text-align: center;
 }
-
+.blob-image {
+ margin: 0 auto;
+}
 /* Set position of social medial icons */
-.headline .summary .contact-me {
+.contact-me {
   background-color: #384af0;
   color:white;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 17px;
   border: 1px solid transparent;
-  border-radius:7px;
-}
-
-.headline .summary .contact-me:hover{
-  background-color: #051497;
-}
-.headline .summary .contact-me:active{
-  background-color: #030e75;
-}
-.headline .summary .social-icon {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 5%;
-  top: 30%;
-  gap: 13px;
-  z-index: 10000;
-}
-.headline .summary .social-icon a{
-  color:#344563;
-  font-size: 20px;
-}
-.headline .summary .scroll-down{
-  color:#344563;
-  border:none;
-  display: block;
-  background-color: transparent;
-  margin: 80px 0;
-  font-size: 12px;
+  border-radius:7px;  
   cursor: pointer;
 }
+.contact-me:hover{
+  background-color: #051497;
+}
+.contact-me:active{
+  background-color: #030e75;
+}
+
 .center{
   display:flex;
   flex-direction: column;
@@ -234,7 +238,7 @@ header{
 
 .no-animate{
   opacity: 0;
-  transition: opacity 0.6s;
+  transition: opacity 0.5s;
 }
 .no-animate.animated {
   opacity: 1;
@@ -282,7 +286,7 @@ header{
 
 /* style technologies used */
 .tools li {
-  font-size: 1.3vw;
+  font-size: 14px;
   background: #ebebff;
   border-radius: 8px;
   text-align: center;

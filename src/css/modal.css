@@ -53,10 +53,10 @@
 }
 
 .card-title {
-  font-size: 15px;
+  font-size: 20px;
   color: #172b4d;
   font-weight: 700;
-  width: 110px;
+  display: inline;
 }
 
 .card-image {
@@ -75,21 +75,7 @@
 }
 
 .barge-list {
-  display: flex;
-  gap: 15px;
   margin: 12px 0;
-}
-
-.barge-list li {
-  height: 16px;
-  color: #7a869a;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.barge-list li:first-child {
-  font-weight: 600;
-  color: #344563;
 }
 
 .card .inner-container{
@@ -253,6 +239,12 @@
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+  gap:20px;
+  margin-top:40px;
+}
+
+.skills .title, .TOP p {
+   color: #2b3852;
 }
 
 .language {
@@ -260,18 +252,12 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 36px;
-  font-family: var(--header-font);
   font-style: normal;
-  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
 }
-.language .title{
-  font-size: 30px;
-  font-weight: 400;
-  color: #1b273b;
-}
+
 .subjects {
   display: flex;
   flex-wrap: wrap;
@@ -301,4 +287,29 @@
 }
 .displayer {
   display: none;
+}
+.education, .barge-list{
+  color:#505f79;
+  display: flex;
+  align-items: center;
+  gap:13px;
+}
+.education .name, .barge-list .name{
+  color:black;
+}
+
+.education i, .barge-list i{
+  color: #C1C7D0;
+  font-size: 10px;
+}
+
+.blob-image {
+  background-image: url('../assets/images/image2.png');
+  background-color: #6070FF;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
