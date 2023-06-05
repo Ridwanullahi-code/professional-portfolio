@@ -11,7 +11,7 @@ export default function createProjects() {
 
     projectContainer += `
       <div class="projects no-animate"  >
-          <img class ='project-image' src="${getImages[index]}" alt="screenshot of project ${project.name}">
+          <img class ='project-image' src="${getImages[index]}" alt="screenshot of ${project.name} with ${project.description}">
           <div class="projects-describe">
             <h2 class="project-title">${project.name}</h2>
             <div>
