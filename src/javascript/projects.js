@@ -21,7 +21,7 @@ export default function createProjects() {
             <ul class="tools">
               ${technologies}
             </ul>
-          <a class="button see-project">See Project</a>
+          <button type="button" name="read more about project" class="button see-project">See Project</button>
       </div>
     </div>
   `;
