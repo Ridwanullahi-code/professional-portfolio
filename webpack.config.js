@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -15,6 +16,13 @@ module.exports = {
   // plugin to create bundle html file on dist folder
   plugins: [new HtmlWebpackPlugin({
     template: path.resolve(__dirname, './src/index.html'),
+  }), new CopyPlugin({
+    patterns: [
+      {
+        from: './src/assets/images/Ridwan_Ajayi_Resume.pdf',
+        to: './pdf/Ridwan_Ajayi_Resume.pdf',
+      },
+    ],
   })],
   // dev server setup
   devServer: {
@@ -45,6 +53,18 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/pdf/', // Specify the output path for PDF files
+            },
+          },
+        ],
       },
       {
       // Now we apply rule for images
