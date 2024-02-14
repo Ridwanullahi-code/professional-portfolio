@@ -19,7 +19,7 @@ module.exports = {
   }), new CopyPlugin({
     patterns: [
       {
-        from: './src/assets/images/Ridwan_Ajayi_Resume.pdf',
+        from: './dist/pdf/AJAYI-RIDWAN.pdf',
         to: './pdf/Ridwan_Ajayi_Resume.pdf',
       },
     ],
