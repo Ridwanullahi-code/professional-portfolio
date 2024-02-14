@@ -19,8 +19,8 @@ module.exports = {
   }), new CopyPlugin({
     patterns: [
       {
-        from: './dist/pdf/AJAYI-RIDWAN.pdf',
-        to: './pdf/Ridwan_Ajayi_Resume.pdf',
+        from: 'src/pdf',
+        to: 'pdf',
       },
     ],
   })],
